@@ -1,55 +1,132 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descobreix Barcelona: descripció, barris destacats, història i locals d'interès.">
-    <meta name="theme-color" content="#1f4e79">
-
-    <meta name="robots" content="index, follow">
-
-    <title>BARRIOS DESTACADOS | La meva ciutat</title>
-
-    <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/barris.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barris destacats | La meva ciutat</title>
+  <meta name="description" content="Coneix els barris més destacats de Barcelona: el Gòtic, l'Eixample, Gràcia, el Born, la Barceloneta i el Poblenou.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1f4e79">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/barris.css">
 </head>
+
 <body>
-     <header>
-        <p class="site-title">Barcelona</p>
-        <nav>
-          <a href="index.html">Inici</a>
-          <a href="barris.html">Barris destacats</a>
-          <a href="historia.html">Història</a>
-          <a href="locals.html">Locals</a>
-        </nav>
-    </header>
-    <main>
-        <h1>Barris destacats de Barcelona</h1>
 
-        <section>
-            <h2>Barri Gòtic</h2>
-            <p>El Barri Gòtic és el cor històric de Barcelona, amb carrers estrets i places encantadores.</p>
-        </section>
+  <header>
+    <h1>Barcelona</h1>
 
-        <section>
-            <h2>Eixample</h2>
-            <p>L'Eixample és conegut per la seva arquitectura modernista i les seves àmplies avingudes.</p>
-        </section>
+    <input type="checkbox" id="menu-toggle">
 
-        <section>
-            <h2>Gràcia</h2>
-            <p>Gràcia és un barri amb un ambient bohemi, famós per les seves places i festivals.</p>
-        </section>
+    <label for="menu-toggle" class="menu-toggle" aria-label="Obrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
 
-        <section>
-            <h2>El Raval</h2>
-            <p>El Raval és un barri multicultural amb una rica vida nocturna i una gran oferta cultural.</p>
-        </section>
-    </main>
-    <footer>
-        <p>  La meva ciutat Barcelona</p>
-    </footer>
-    
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="barris.html" aria-current="page">Barris destacats</a></li>
+        <li><a href="historia.html">Història</a></li>
+        <li><a href="locals.html">Locals</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Barris destacats</h2>
+      <p>
+        Barcelona es divideix en barris amb una identitat molt marcada.
+        Cadascun té la seva història, el seu ambient i els seus llocs d'interès.
+      </p>
+    </section>
+
+    <section class="barri">
+      <figure>
+        <picture>
+          <source srcset="./images/gotic.webp" type="image/webp">
+          <img src="./images/gotic.jpg" alt="Carrer del barri Gòtic de Barcelona">
+        </picture>
+      </figure>
+      <div class="barri-text">
+        <h2>Barri Gòtic</h2>
+        <p>El nucli medieval de la ciutat. Els seus carrers estrets amaguen la Catedral, la plaça Sant Jaume i restes romanes.</p>
+      </div>
+    </section>
+
+    <section class="barri">
+      <figure>
+        <picture>
+          <source srcset="./images/eixample.webp" type="image/webp">
+          <img src="./images/eixample.jpg" alt="Edifici modernista a l'Eixample">
+        </picture>
+      </figure>
+      <div class="barri-text">
+        <h2>Eixample</h2>
+        <p>Una quadrícula d'avingudes amples plena d'arquitectura modernista, amb la Sagrada Família i el Passeig de Gràcia.</p>
+      </div>
+    </section>
+
+    <section class="barri">
+      <figure>
+        <picture>
+          <source srcset="./images/gracia.webp" type="image/webp">
+          <img src="./images/gracia.jpg" alt="Plaça al barri de Gràcia">
+        </picture>
+      </figure>
+      <div class="barri-text">
+        <h2>Gràcia</h2>
+        <p>Antiga vila independent amb places animades, ambient bohemi i la famosa Festa Major de Gràcia.</p>
+      </div>
+    </section>
+
+    <section class="barri">
+      <figure>
+        <picture>
+          <source srcset="./images/born.webp" type="image/webp">
+          <img src="./images/born.jpg" alt="Basílica de Santa Maria del Mar al Born">
+        </picture>
+      </figure>
+      <div class="barri-text">
+        <h2>El Born</h2>
+        <p>Gòtic català, botigues de disseny i el Museu Picasso, entre carrers plens de bars i restaurants.</p>
+      </div>
+    </section>
+
+    <section class="barri">
+      <figure>
+        <picture>
+          <source srcset="./images/barceloneta.webp" type="image/webp">
+          <img src="./images/barceloneta.jpg" alt="Platja de la Barceloneta">
+        </picture>
+      </figure>
+      <div class="barri-text">
+        <h2>La Barceloneta</h2>
+        <p>Barri mariner al costat de la platja, conegut pels xiringuitos i la cuina de peix i arrossos.</p>
+      </div>
+    </section>
+
+    <section class="barri">
+      <figure>
+        <picture>
+          <source srcset="./images/poblenou.webp" type="image/webp">
+          <img src="./images/poblenou.jpg" alt="Rambla del Poblenou">
+        </picture>
+      </figure>
+      <div class="barri-text">
+        <h2>Poblenou</h2>
+        <p>Antiga zona industrial convertida en un barri creatiu i tecnològic, amb platges i la rambla.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>La meva ciutat Barcelona</p>
+  </footer>
+
 </body>
+
 </html>

@@ -13,15 +13,25 @@
     <link rel="stylesheet" href="./css/locals.css">
 </head>
 <body>
-    <header>
-        <p class="site-title">Barcelona</p>
-        <nav>
-          <a href="index.html">Inici</a>
-          <a href="barris.html">Barris destacats</a>
-          <a href="historia.html">Història</a>
-          <a href="locals.html">Locals</a>
-        </nav>
-    </header>
+  <header>
+     <h1>Barcelona</h1>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-toggle" aria-label="Obrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav aria-label="Menú principal">
+        <ul>
+            <li><a href="index.html" aria-current="page">Inici</a></li>
+            <li><a href="barris.html">Barris destacats</a></li>
+            <li><a href="historia.html">Història</a></li>
+            <li><a href="locals.html">Locals</a></li>
+        </ul>
+  </header>
 
     <main>
         <h1>Restaurants, botigues i llocs d'oci</h1>

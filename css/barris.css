@@ -1,3 +1,45 @@
-h1{
-    color: var(--color-secundari);
+.barri {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Alterna la imatge: esquerra / dreta */
+.barri:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.barri figure {
+  flex: 0 0 40%;
+  height: 200px;
+}
+
+.barri picture,
+.barri img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.barri img {
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.barri-text {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .barri,
+  .barri:nth-of-type(even) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .barri figure {
+    flex: none;
+    height: 180px;
+  }
 }
