@@ -12,3 +12,7 @@ INTRODUCCION LA CIUDAD, DESCRIPCION
 | 60% | Fons de la página y secciones | Blanco azulado | `#f6f7fb` |
 | 30% | Cabecera, títulos y menú | Azul blaugrana | `#004d98` |
 | 10% | Acentos: enlaces, hover y detalles | Granate | `#a50044` |
+
+
+
+# HOLA
