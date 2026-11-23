@@ -93,3 +93,7 @@ h1{
 .evolucio-historica h3:hover + p{
     display: block;
 } 
+
+.museu{
+    color: #728da6;
+}
