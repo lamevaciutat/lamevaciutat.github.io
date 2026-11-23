@@ -95,6 +95,10 @@ h1{
     content: "▸";
 }
 
+.evolucio-historica details[open] > summary h3 {
+    color: var(--color-accent);
+}
+
 .evolucio-historica details:not([open]) > p {
     display: none;
 }
