@@ -80,7 +80,27 @@ h1{
 }
 
 .evolucio-historica summary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     cursor: pointer;
+    list-style: none;
+}
+
+.evolucio-historica summary::-webkit-details-marker {
+    display: none;
+}
+
+.evolucio-historica summary::before {
+    content: "▸";
+}
+
+.evolucio-historica details[open] > summary::before {
+    content: "▾";
+}
+
+.evolucio-historica summary h3 {
+    margin: 0;
 }
 
 .evolucio-historica summary h3 {
@@ -92,5 +112,5 @@ h1{
 }
 
 .museu{
-    color: #b4c7da;
+    color: #8a9eb3;
 }
