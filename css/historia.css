@@ -100,6 +100,10 @@ h1{
     content: "▸";
 }
 
+.evolucio-historica details[open] > summary::before {
+    content: "▾";
+}
+
 .evolucio-historica details:not([open]) > p {
     display: none;
 }
@@ -114,5 +118,6 @@ h1{
 }
 
 .museu{
-    color: #8a9eb3;
+    color: #ffb3c9;
+    text-decoration: underline;
 }
