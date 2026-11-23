@@ -90,7 +90,7 @@ h1{
 .evolucio-historica h3:hover{
     color: var(--color-accent);
 }
-.evolucio-historica h3:hover + p{
+.evolucio-historica h3::after + p{
     display: block;
 } 
 
