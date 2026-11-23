@@ -97,7 +97,6 @@ h1{
 
 .evolucio-historica details:not([open]) > p {
     display: none;
-    color: var(--color-accent);
 }
 
 .evolucio-historica summary h3 {
