@@ -232,3 +232,7 @@ footer {
     animation-duration: 0.01ms !important;
   }
 }
+
+.active{
+    border-bottom-color: var(--color-accent);
+}
