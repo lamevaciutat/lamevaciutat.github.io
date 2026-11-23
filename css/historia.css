@@ -79,21 +79,18 @@ h1{
     }
 }
 
-.evolucio-historica p{
-    display: none;
-}
-
-.evolucio-historica h3{
+.evolucio-historica summary {
     cursor: pointer;
 }
 
-.evolucio-historica h3:hover{
+.evolucio-historica summary h3 {
+    display: inline;
+}
+
+.evolucio-historica summary:hover h3 {
     color: var(--color-accent);
 }
-.evolucio-historica h3::after + p{
-    display: block;
-} 
 
 .museu{
-    color: #9ab1c7;
+    color: #b4c7da;
 }
