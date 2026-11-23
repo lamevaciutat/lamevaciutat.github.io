@@ -47,3 +47,7 @@
         height: 220px;      /* Una mica més alta a mòbil */
     }
 }
+
+a {
+    color: #ffb3c9;
+}

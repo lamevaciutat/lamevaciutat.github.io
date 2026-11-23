@@ -74,7 +74,11 @@ nav a:hover {
   border-bottom-color: var(--color-accent);
 }
 
-/* global.css */
+nav a[aria-current="page"] {
+  border-bottom-color: var(--color-principal);
+  font-weight: 700;
+}
+
 nav a:focus-visible {
     outline: 3px solid var(--color-principal);
     outline-offset: 4px;
@@ -236,8 +240,4 @@ footer {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
   }
-}
-
-.active{
-    border-bottom-color: var(--color-accent);
 }

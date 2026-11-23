@@ -91,7 +91,7 @@
     <header>
         <h1>Barcelona</h1>
 
-        <input type="checkbox" id="menu-toggle">
+        <input type="checkbox" id="menu-toggle" aria-label="Mostra el menú principal">
 
         <label for="menu-toggle" class="menu-toggle" aria-label="Obrir menú">
             <span></span>
@@ -101,10 +101,10 @@
 
         <nav aria-label="Menú principal">
             <ul>
-                <li><a href="index.html" aria-current="page">Inici</a></li>
+                <li><a href="index.html">Inici</a></li>
                 <li><a href="barris.html">Barris destacats</a></li>
                 <li><a href="historia.html">Història</a></li>
-                <li><a href="locals.html" class="active">Locals</a></li>
+                <li><a href="locals.html" class="active" aria-current="page">Locals</a></li>
             </ul>
     </header>
 
@@ -115,10 +115,11 @@
         <section class="article">
             <h2>Can Culleretes</h2>
             <div class="article-content">
-                <figure>
-                    <img src="./images/can-culleretes.jpg" alt="Restaurant Can Culleretes">
-                    <figcaption>Restaurant històric del Barri Gòtic</figcaption>
-                </figure>
+                <picture>
+                  <source srcset="./images/can-culleretes.webp" type="image/webp">
+                  <img src="./images/can-culleretes.jpg" alt="Restaurant Can Culleretes">
+                </picture>
+                
                 <div class="text">
                     <p>Fundat l’any 1786, Can Culleretes és un dels restaurants més antics de Barcelona. Situat al cor
                         del Barri Gòtic, ofereix cuina catalana tradicional amb plats com canelons de la casa, escudella
@@ -134,10 +135,11 @@
         <section class="article">
             <h2>Mercat de la Boqueria</h2>
             <div class="article-content">
-                <figure>
-                    <img src="./images/boqueria.jpg" alt="Mercat de la Boqueria">
-                    <figcaption>El mercat més famós de les Rambles</figcaption>
-                </figure>
+                <picture>
+                  <source srcset="./images/boqueria.webp" type="image/webp">
+                  <img src="./images/boqueria.jpg" alt="Mercat de la Boqueria">
+                </picture>
+                
                 <div class="text">
                     <p>El Mercat de Sant Josep de la Boqueria és un dels mercats més coneguts d’Europa. Amb més de 200
                         parades, hi trobaràs productes frescos de primera qualitat: fruita, verdura, peix, carn,
@@ -153,10 +155,11 @@
         <section class="article">
             <h2>Colmado Quílez</h2>
             <div class="article-content">
-                <figure>
-                    <img src="./images/colmado-quilez.jpg" alt="Colmado Quílez">
-                    <figcaption>Botiga gourmet històrica</figcaption>
-                </figure>
+                <picture>
+                  <source srcset="./images/colmado-quilez.webp" type="image/webp">
+                  <img src="./images/colmado-quilez.jpg" alt="Colmado Quílez">
+                </picture>
+                
                 <div class="text">
                     <p>El Colmado Quílez és una botiga gourmet amb més de 100 anys d’història. Especialitzada en
                         productes de qualitat, ofereix una àmplia selecció d’embotits ibèrics, formatges artesans, vins,
@@ -172,10 +175,11 @@
         <section class="article">
             <h2>Bar Marsella</h2>
             <div class="article-content">
-                <figure>
-                    <img src="./images/bar-marsella.jpg" alt="Bar Marsella">
-                    <figcaption>Bar històric del Raval</figcaption>
-                </figure>
+                <picture>
+                  <source srcset="./images/bar-marsella.webp" type="image/webp">
+                  <img src="./images/bar-marsella.jpg" alt="Bar Marsella">
+                </picture>
+                
                 <div class="text">
                     <p>Obert des de l’any 1820, el Bar Marsella és un dels bars més antics i emblemàtics de Barcelona.
                         Situat al Raval, conserva un ambient bohemi i nostàlgic, amb miralls antics i una atmosfera
@@ -191,10 +195,11 @@
         <section class="article">
             <h2>Sala Apolo</h2>
             <div class="article-content">
-                <figure>
-                    <img src="./images/sala-apolo.jpg" alt="Sala Apolo">
-                    <figcaption>Sala de concerts del Poble-sec</figcaption>
-                </figure>
+                <picture>
+                  <source srcset="./images/sala-apolo.webp" type="image/webp">
+                  <img src="./images/sala-apolo.jpg" alt="Sala Apolo">
+                </picture>
+                
                 <div class="text">
                     <p>La Sala Apolo és una de les sales de concerts i discoteques més mítiques de Barcelona. Situada al
                         barri del Poble-sec, acull concerts de molts estils i sessions de música electrònica, indie i
